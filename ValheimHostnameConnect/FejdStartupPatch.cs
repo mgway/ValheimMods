@@ -7,7 +7,10 @@ namespace ValheimHostnameConnect
     {
         private static void Postfix(FejdStartup __instance)
         {
-            __instance.m_joinIPAddress.text = HostnameConnect.lastServerAddress.Value;
+            if (!string.IsNullOrEmpty(HostnameConnect.serverAddress.Value))
+            {
+                __instance.m_joinIPAddress.text = HostnameConnect.serverAddress.Value + ":" + HostnameConnect.serverPort.Value;
+            }
         }
     }
 }
