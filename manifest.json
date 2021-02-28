@@ -1,0 +1,9 @@
+﻿{
+    "name": "HostnameConnect",
+    "version_number": "1.0.1",
+    "website_url": "https://github.com/mgway/ValheimHostnameConnect",
+    "description": "Connect to dedicated Valheim servers using a hostname instead of IP address",
+    "dependencies": [
+        "denikson-BepInExPack_Valheim-5.4.701"
+    ]
+}
