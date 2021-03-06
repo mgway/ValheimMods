@@ -1,10 +1,7 @@
-﻿using System.Reflection;
-using System.Reflection.Emit;
+﻿using System.Reflection.Emit;
 using System.Collections.Generic;
 using System.Linq;
 
-using BepInEx;
-using BepInEx.Configuration;
 using HarmonyLib;
 
 namespace ValheimHostnameConnect
