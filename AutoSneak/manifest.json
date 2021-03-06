@@ -2,7 +2,7 @@
     "name": "AutoSneak",
     "version_number": "1.0.0",
     "website_url": "https://github.com/mgway/ValheimMods",
-    "description": "Connect to dedicated Valheim servers using a hostname instead of IP address",
+    "description": "Like autorun, but for sneaking",
     "dependencies": [
         "denikson-BepInExPack_Valheim-5.4.701"
     ]
