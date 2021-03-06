@@ -4,7 +4,7 @@ using System.Linq;
 
 using HarmonyLib;
 
-namespace ValheimHostnameConnect
+namespace HostnameConnect
 {
     [HarmonyPatch]
     class ZNetPatch

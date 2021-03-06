@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 
-namespace ValheimHostnameConnect
+namespace HostnameConnect
 {
     [HarmonyPatch(typeof(FejdStartup), "OnJoinIPOpen")]
     public static class FejdStartupPatch

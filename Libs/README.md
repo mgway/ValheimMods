@@ -3,6 +3,7 @@
 ## From BepInEx provided unstripped_corlib
 
 - UnityEngine.CoreModule.dll
+- UnityEngine.PhysicsModule.dll
 - UnityEngine.dll
 - UnityEngine.UI.dll
 

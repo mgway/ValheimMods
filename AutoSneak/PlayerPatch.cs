@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using HarmonyLib;
-using UnityEngine;
 
-namespace ValheimHostnameConnect
+namespace AutoSneak
 {
     [HarmonyPatch]
     class PlayerPatch
@@ -21,15 +20,17 @@ namespace ValheimHostnameConnect
             {
                 List<CodeInstruction> list = instructions.ToList<CodeInstruction>();
                 
-
-                for (int index = 0; index < list.Count; ++index)
+                if (AutoSneak.PluginEnabled.Value)
                 {
-                    if (list[index].opcode == OpCodes.Callvirt && list[index].operand.ToString() == setCrouchMethod.ToString())
+                    for (int index = 0; index < list.Count; ++index)
                     {
-                        list[index - 2].opcode = OpCodes.Nop;
-                        list[index - 1].opcode = OpCodes.Nop;
-                        list[index].opcode = OpCodes.Nop;
-                        break;
+                        if (list[index].opcode == OpCodes.Callvirt && list[index].operand.ToString() == setCrouchMethod.ToString())
+                        {
+                            list[index - 2].opcode = OpCodes.Nop;
+                            list[index - 1].opcode = OpCodes.Nop;
+                            list[index].opcode = OpCodes.Nop;
+                            break;
+                        }
                     }
                 }
 

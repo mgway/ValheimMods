@@ -2,7 +2,7 @@
 using HarmonyLib;
 using System.Net;
 
-namespace ValheimHostnameConnect
+namespace HostnameConnect
 {
     [HarmonyPatch(typeof(ZSteamMatchmaking), "QueueServerJoin")]
     public static class ZSteamMatchmakingPatch

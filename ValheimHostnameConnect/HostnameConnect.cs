@@ -3,7 +3,7 @@ using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
 
-namespace ValheimHostnameConnect
+namespace HostnameConnect
 {
 	[BepInPlugin("ohmg.mods.hostnameconnect", "Hostname Connect", "1.0.1")]
 	public class HostnameConnect : BaseUnityPlugin
