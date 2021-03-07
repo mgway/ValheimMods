@@ -1,6 +1,6 @@
 ﻿{
     "name": "PaddlePower",
-    "version_number": "1.0.0",
+    "version_number": "1.0.2",
     "website_url": "https://github.com/mgway/ValheimMods",
     "description": "More ship passengers means more hands to help paddle",
     "dependencies": [
